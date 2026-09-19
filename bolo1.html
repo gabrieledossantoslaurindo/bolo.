@@ -1,0 +1,36 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja Online</title>
+</head>
+<body>
+  <h1>Bem-vindo à Loja</h1>
+  <button onclick="mostrarPix()">Comprar</button>
+
+  <!-- Texto escondido -->
+  <p id="pix" style="display:none; font-weight:bold; color:green;">
+    Chave Pix: seuemail@exemplo.com
+  </p>
+
+  <script>
+    function mostrarPix() {
+      // pega o elemento <p> com id="pix"
+      var chave = document.getElementById("pix");
+      // muda o estilo para aparecer
+      chave.style.display = "block";
+    }
+  </script>
+</body>
+
+
+<a href="https://www.bolo.html">Clique para Ir para Outra Página</a>
+
+
+
+
+
+
