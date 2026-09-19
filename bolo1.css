@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(29, 24, 24);
+  color: rgb(27, 19, 19);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden; /* evita barra de rolagem */
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: rgb(28, 138, 168);
+  color:rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1, p, label {
+  color: rgb(243, 236, 236);
+}
+
+@keyframes cair {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.rosa {
+  position: fixed;
+  top: -50px;
+  font-size: 40px;
+  color: red;
+  animation: cair 8s linear forwards;
+}

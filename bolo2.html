@@ -1,0 +1,86 @@
+
+  
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="bolo2.css">
+</head>
+<body>
+    <header>
+       
+
+        <h1>  A𝖋𝖊𝖙𝖚𝖆𝖗 𝖔 𝖕𝖆𝖌𝖊𝖒𝖊𝖓𝖙𝖔 𝖛𝖎𝖆 P𝖎𝖝 41984325440  Raissa Gabriele   </h1>
+
+        <p>me chame nesse mesmo numero para enviar o comprovante!</p>
+       
+
+
+  
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Raios Caindo</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1, p {
+      color: white;
+    }
+
+    @keyframes cair {
+      to {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+
+    .raio {
+      position: fixed;
+      top: -100px;
+      font-size: 60px;
+      color: yellow;
+      text-shadow: 0 0 20px white, 0 0 40px yellow;
+      animation: cair 2s linear forwards;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simulação de Raios</h1>
+  <p>Clique no botão ou espere para ver raios caindo!</p>
+
+  <button onclick="criarRaio()">Soltar Raio</button>
+
+  <script>
+    function criarRaio() {
+      const raio = document.createElement("div");
+      raio.innerText = "⚡"; // símbolo de raio
+      raio.classList.add("raio");
+      raio.style.left = Math.random() * window.innerWidth + "px";
+      document.body.appendChild(raio);
+
+      setTimeout(() => raio.remove(), 2000);
+    }
+
+    // Raios automáticos caindo de tempos em tempos
+    setInterval(criarRaio, 1500);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

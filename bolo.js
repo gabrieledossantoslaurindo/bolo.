@@ -14,3 +14,15 @@ function mostrarPix() {
   document.getElementById("pix").style.display = "block";
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
